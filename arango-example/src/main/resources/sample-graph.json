@@ -1,0 +1,42 @@
+{
+  "name": "sample-graph",
+  "graph": {
+    "nodes": [
+      {
+        "id": "000001",
+        "name": "Aさん",
+        "label": "人",
+        "properties": {}
+      },
+      {
+        "id": "000002",
+        "name": "Bさん",
+        "label": "人",
+        "properties": {}
+      },
+      {
+        "id": "000003",
+        "name": "ラーメン",
+        "label": "食べ物",
+        "properties": {}
+      } 
+
+    ],
+    "relations": [
+      {
+        "id": "100001",
+        "type": "友達",
+        "startNodeId": "000001",
+        "endNodeId": "000002",
+        "properties": {}
+      },
+      {
+        "id": "100002",
+        "type": "好物",
+        "startNodeId": "000001",
+        "endNodeId": "000003",
+        "properties": {}
+      }
+    ]
+  }
+}

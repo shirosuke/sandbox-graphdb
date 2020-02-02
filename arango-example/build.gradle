@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
@@ -29,6 +29,11 @@ dependencies {
 	// Arango DB
 	compile group: 'com.arangodb', name: 'arangodb-java-driver', version: '6.5.0'
 	compile group: 'com.arangodb', name: 'arangodb-spring-data', version: '3.2.3'
+
+	// Swagger
+	implementation     "io.springfox:springfox-swagger2:2.9.2"
+	implementation     "io.springfox:springfox-swagger-ui:2.9.2"
+
 }
 
 test {
